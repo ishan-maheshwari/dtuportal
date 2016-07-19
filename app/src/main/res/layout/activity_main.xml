@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/displaypic"
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:background="#d1d1d1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Ishan"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/first_name"
+
+        android:textSize="40dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Maheshwari"
+        android:id="@+id/surname"
+        android:paddingLeft="20dp"
+        android:textSize="35dp"
+        android:layout_below="@+id/first_name"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="DTU/2K15/B2/247"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/roll"
+
+        android:textColor="#5c5c5c"
+        android:layout_below="@+id/surname"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Software Engineering - 1st Year"
+        android:id="@+id/branch_year"
+        android:layout_below="@+id/roll"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Batch - B2"
+        android:id="@+id/batch"
+        android:layout_below="@+id/branch_year"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Hosteller - Aryabhatta Hostel"
+        android:id="@+id/hostel"
+        android:layout_below="@+id/batch"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Short Attendance in 2 Subjects"
+        android:id="@+id/att_status"
+        android:textColor="#dc0000"
+        android:layout_below="@+id/hostel"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="2 New Messages"
+        android:id="@+id/msg_status"
+
+        android:layout_below="@+id/att_status"
+        android:textColor="#0db401"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:textSize="16dp"
+        android:id="@+id/btn_messages"
+
+        android:onClick="goToMessageActivity"
+        android:background="#03afff"
+        android:layout_marginBottom="10dp"
+        android:textColor="#FFFFFF"
+        android:layout_above="@+id/btn_att"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:id="@+id/btn_att"
+        android:onClick="goToAttendanceActivity"
+        android:background="#fa5151"
+        android:textColor="#FFFFFF"
+
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/btn_ass"
+        android:layout_centerInParent="true"
+        />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Assignments"
+        android:id="@+id/btn_ass"
+        android:background="#fa5151"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="showToast"
+         />
+
+
+</RelativeLayout>
